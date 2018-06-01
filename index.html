@@ -5,13 +5,35 @@
     <title>Splashy Fish</title>
     <style>
       * { padding: 0; margin: 0; }
-      canvas { background: #eee; display: block; margin: 0 auto; }
+      canvas { background: #eee;}
     </style>
 
+    <link rel="stylesheet" href="main.css" type="text/css" media="screen">
     <script src="./lib/bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      function restart() {
+          const canvasEl = document.getElementById('drawing-canvas');
+          canvasEl.height = window.innerHeight;
+          canvasEl.width = window.innerWidth;
+          new Game(
+            canvasEl.width,
+            canvasEl.height
+          ).start(canvasEl);
+      }
+    </script>
+
   </head>
 
   <body>
-    <canvas id='container'></canvas>
+    <div id = "container">
+      <canvas id='drawing-canvas'></canvas>
+        <div id="game-over">
+          <img src ="./images/gameover.png" class="img-center"/>
+          <h2>You score is  <span id="score"></span>!</h2>
+          <a href="javascript:void(0)" class="button restart" onclick="restart()">Try again?</a>
+        </div>
+    </div>
   </body>
 </html>
