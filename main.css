@@ -6,6 +6,10 @@
   align-content: center;
 }
 
+body{
+  background-color: lightblue;
+}
+
 canvas {
     padding: 0;
     margin: auto;
@@ -56,4 +60,64 @@ canvas {
   background-image:         linear-gradient(to bottom, #FB1886 0%, #B30D5D 100%);
   border-radius: 5px;
   text-decoration: none
+}
+
+.sound {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 3;
+}
+.sound-on {
+  background-image: url('images/soundOn.png');
+  background-repeat: no-repeat;
+}
+.sound-off {
+  background-image: url('images/soundOff.png');
+  background-repeat: no-repeat;
+}
+
+
+.link-list {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  align-self: right;
+  /*border: 1px solid yellow;*/
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.link-list li {
+  margin-right: 30px;
+  color: white;
+}
+
+.brian-contact {
+  width: 100%;
+  font-size: 45px;
+  color: white;
+  align-self: right;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.githublink {
+  color: white;
+}
+
+.linked-in-link {
+  color: white;
+
+}
+
+.linked-in-open {
+  color: white;
+  font-size: 25px;
 }

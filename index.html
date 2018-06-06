@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Splashy Fish</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
       * { padding: 0; margin: 0; }
       canvas { background: #eee;}
@@ -28,12 +31,22 @@
 
   <body>
     <div id = "container">
+      <div class="sound sound-off"></div>
       <canvas id='drawing-canvas'></canvas>
         <div id="game-over">
           <img src ="./images/gameover.png" class="img-center"/>
           <h2>You score is  <span id="score"></span>!</h2>
           <a href="javascript:void(0)" class="button restart" onclick="restart()">Try again?</a>
         </div>
-    </div>
+
+        <div class="brian-contact">
+          <ul class="link-list">
+            <li> <a class="githublink" href="https://github.com/leebrian7799" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li>
+              <a class="linked-in-link" href="https://linkedin.com/in/brian-lee-2a351b1b/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+            <li> <a class="linked-in-link" href="https://angel.co/brian-lee-127" target="_blank"> <i class="fa fa-angellist" aria-hidden="true"></i></a></li>
+          </ul>
+      </div>
   </body>
 </html>
